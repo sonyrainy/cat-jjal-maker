@@ -16,7 +16,9 @@ favorites 기능<br>
 +) txt와 고양이가 같이 출력
 
 <br>
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/91364766/190647374-1399a3a9-38e1-4904-8a0a-36187589e403.png" alt="cat-jjal-maker-example"/>
+</p> 
  
 <br><br><br>
 
