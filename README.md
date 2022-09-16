@@ -10,10 +10,9 @@ favorites 기능<br>
 
 - 2차<br>
 Local Storage에 counter 값 증가<br>
-생성 button 누를 경우 사진 변경(1회)<br>
++) 생성 button 누를 경우 사진 변경(영구)<br>
 favorites 기능<br>
-<br>
-+) txt와 고양이가 같이 출력
++) txt와 고양이가 같이 출력<br>
 
 <br>
 <p align="center">
