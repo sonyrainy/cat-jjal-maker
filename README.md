@@ -19,7 +19,7 @@ favorites 기능<br>
   <img src="https://user-images.githubusercontent.com/91364766/190647374-1399a3a9-38e1-4904-8a0a-36187589e403.png" alt="cat-jjal-maker-example"/>
 </p> 
 
--3차<br>
+- 3차<br>
 열심히 css로 footer 등을 만들었는데, git bash를 사용해서 github에 업로드하려다가 뭔가를 잘못했는지 파일이 전부 삭제됐다...
 <br>그나마 화면 캡쳐는 했는데ㅠㅠ 검색해보니 gitbash에서 이전 로그를 이용하면 되는 것 같던데
 <br>당황해서 gitbash까지 종료해버려서 답이 없다.. 일단 이대로..
