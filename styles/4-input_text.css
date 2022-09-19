@@ -1,0 +1,17 @@
+input {
+    width: 300px;
+    height: 32px;
+    font-size: 15px;
+    color : #ffffff;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    display : inline-block;
+    background-color: #000000;
+    box-shadow : 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    
+  }
+  ::-webkit-input-placeholder { /* 크롬 4–56 */
+    color: #ffffff;
+}
