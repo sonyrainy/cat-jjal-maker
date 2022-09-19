@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>고양이 가라사대</title>
+    <title>고양이 생성기</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="imag/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
+
   <style>
     body {
       text-align: center;
@@ -23,7 +26,46 @@
       gap: 15px;
     }
   </style>
+
   <body>
+    <section class="intro">
+      <div class="intro__dark">
+        <div class="intro__type">
+          <div><span aria-hidden="true">🐱</span> 고양이</div>
+          <div>생성기<span class="underscore">_</span></div>
+        </div>
+      </div>
+      <div class="intro__tilt"></div>
+    </section>
+
+    <header class="header">
+      <h1>
+        <a class="header__homelink" href="#">
+          <img class="header__logo" src="./images/logo.svg" alt="홈으로" />
+        </a>
+      </h1>
+      <input class="header__menu-btn" type="checkbox" />
+      <nav class="header__nav">
+        <ul>
+          <li class="header__nav-item">
+            <a href="#about">HOME</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#html">HTML</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#css">CSS</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#curriculum">기능</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#contact">문의하기</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <div id="app"></div>
 
     <script
@@ -95,7 +137,13 @@
               value={value}
               onChange={handleInputChange}
             />
-            <button type="submit">생성</button>
+
+            <div class="buttons">
+              <button class="btn-hover color" type="submit">
+                say sth
+              </button>
+            </div>
+
             <p style={{ color: "red" }}>{errorMessage}</p>
           </form>
         );
@@ -111,7 +159,7 @@
 
       function Favorites({ favorites }) {
         if (favorites.length === 0) {
-          return <div>사진 위 하트를 눌러 고양이 사진을 저장해봐요!</div>;
+          return <div>사진 위 하트를 눌러 고양이 사진을 저장해보세요!</div>;
         }
 
         return (
@@ -128,19 +176,16 @@
         return (
           <div className="main-card">
             <img src={img} alt="고양이" width="400" />
-            <button onClick={onHeartClick}>{heartIcon}</button>
+            <div class="buttons">
+              <button class="mini color" onClick={onHeartClick}>
+                {heartIcon}
+              </button>
+            </div>
           </div>
         );
       };
 
       const App = () => {
-        const CAT1 =
-          "https://cataas.com/cat/60b73094e04e18001194a309/says/react";
-        const CAT2 =
-          "https://cataas.com//cat/5e9970351b7a400011744233/says/inflearn";
-        const CAT3 =
-          "https://cataas.com/cat/595f280b557291a9750ebf65/says/JavaScript";
-
         //이제 불필요하게 localStorage에 접근하지 않아도 되도록 하면 주석 코드 아래와 같게 한다.
         // const [counter, setCounter] = React.useState(
         //   jsonLocalStorage.getItem("counter")
@@ -149,7 +194,7 @@
         const [counter, setCounter] = React.useState(() => {
           return jsonLocalStorage.getItem("counter");
         });
-        const [mainCat, setMainCat] = React.useState(CAT1);
+        const [mainCat, setMainCat] = React.useState(mainCat);
 
         // const [favorites, setFavorites] = React.useState(
         //   jsonLocalStorage.getItem("favorites") || []

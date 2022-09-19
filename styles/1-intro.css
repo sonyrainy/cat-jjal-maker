@@ -1,0 +1,90 @@
+.intro {
+  position: relative;
+  background-image: url("../images/intro-bg.png");
+  background-size: contain;
+  background-position: center;
+}
+/* 배경 이미지를 반투명 검정으로 가리기 */
+.intro__dark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.67);
+}
+.intro__type {
+  display: inline-flex;
+  gap: 0.32em;
+  font-family: var(--font-code);
+  font-size: 2.8em;
+  font-weight: bold;
+  color: white;
+}
+.header__nav-item {
+  font-size: var(--font-size-larger);
+}
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+[class^="intro__tilt"] {
+  /*absolute라서 relative 안쪽에 위치 가능*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  background-color: var(--color-main);
+  /* clip-path: polygon(0, 0, 0, 0); */
+}
+.header__nav-item a {
+  /* 클릭 영역 확대 */
+  display: inline-block;
+  height: var(--height-toolbar);
+  line-height: var(--height-toolbar);
+}
+
+@media (max-width: 768px) {
+  .intro {
+    height: 100vh;
+  }
+  .intro__type {
+    margin-top: 36vh;
+    flex-direction: column;
+    text-align: left;
+  }
+  .intro__type .underscore {
+    animation-name: blink;
+    animation-duration: 350ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+}
+@media (min-width: 769px) {
+  .intro {
+    height: 200px;
+  }
+  .intro__type {
+    margin-top: 67px;
+    align-items: center;
+  }
+  .intro__type span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.25em;
+  }
+  .intro__type .underscore {
+    animation-name: blink;
+    animation-duration: 350ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+}
+
