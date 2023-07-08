@@ -20,13 +20,16 @@ favorites 기능<br>
 </p> 
 
 - 3차<br>
-it bash를 사용해서 github에 업로드하려다가 뭔가를 잘못했는지 파일이 전부 삭제됐다...
-<br>그나마 화면 캡쳐는 했는데ㅠㅠ 검색해보니 gitbash에서 이전 로그를 이용하면 되는 것 같던데
-<br>당황해서 gitbash까지 종료해버려서 답이 없다.
+it bash를 사용해서 github에 업로드하려다가 뭔가를 잘못했는지 파일이 전부 삭제됐다..
+<br>검색해보니 gitbash에서 이전 로그를 이용하면 된다고 한다. 그나마 화면 캡쳐는 해서 사진은 남아있는데,
+<br>당황해서 gitbash까지 종료해버려서 답이 없는 상황이다.
 git 이용 방법을 조금 더 익혀야 할 필요가 있을 것 같다.
-![고양이 생성기 첫 페이지](https://user-images.githubusercontent.com/91364766/191047919-091f2beb-567b-426a-83e3-43c02d7a501b.png)
 
-<br><br><br>
+<br>
+
+![image](https://github.com/sonyrainy/cat-jjal-maker/assets/91364766/9bae387c-efe3-4aed-b9ca-4b2764ca4cf1)
+
+<br><br>
 
 ---
 
