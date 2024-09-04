@@ -1,3 +1,7 @@
+→ 고양이 이미지 지원이 종료되어 사이트가 비활성화 된 상태입니다.
+
+---
+
 # cat-jjal-maker(원하는대로 말하는 고양이 생성기 react App)
 https://sonyrainy.github.io/cat-jjal-maker/
 
@@ -20,7 +24,7 @@ favorites 기능<br>
 </p> 
 
 - 3차<br>
-이미지 지원이 종료된 상황입니다.
+이미지 지원이 종료되었습니다.
 
 <br>
 
